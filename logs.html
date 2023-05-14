@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logs • OurGTA</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a href="/index.html"><h1>home</h1></a>
+
+    <h2><a id="names">names</a></h2>
+
+    <form action="/find.html">
+      <input type="text" name="name" placeholder="name" />
+    </form>
+
+    <img
+      style="display: none"
+      src="/img/spinner-solid.svg"
+      id="loading"
+      class="rotate"
+      width="64"
+      height="64"
+      alt=""
+    />
+
+    <table id="logstable" style="display: none">
+      <tr>
+        <th>name</th>
+        <th>server</th>
+        <th>joined</th>
+        <th>left</th>
+        <th>length</th>
+      </tr>
+    </table>
+
+    <a id="previous" class="offline">previous_page</a>
+    <a id="next" class="offline">next_page</a>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/logs.js"></script>
+  </body>
+</html>

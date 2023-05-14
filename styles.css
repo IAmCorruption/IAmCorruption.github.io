@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+a {
+  color: #4fc1ff;
+  text-decoration: none;
+}
+
+a.offline {
+  opacity: 0.667;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+td:first-child {
+  padding-left: initial;
+}
+
+td:last-child {
+  padding-right: initial;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find • OurGTA</title>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a href="/index.html"><h1>home</h1></a>
+
+    <form action="/find.html">
+      <input type="text" name="name" placeholder="name" />
+    </form>
+
+    <img
+      style="display: none"
+      src="/img/spinner-solid.svg"
+      id="loading"
+      class="rotate"
+      width="64"
+      height="64"
+      alt=""
+    />
+
+    <table id="findtable" style="display: none">
+      <tr>
+        <th>name</th>
+        <th>server</th>
+        <th>seen</th>
+      </tr>
+    </table>
+
+    <a id="previous" class="offline">previous_page</a>
+    <a id="next" class="offline">next_page</a>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/find.js"></script>
+  </body>
+</html>
